@@ -14,20 +14,20 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
-        $('button').click(function(){
-            $.ajax({
-                url:'new.txt',
-                success:function(result){
-                    $('span').html(result)
-                }
-            })
-        })
         // $('button').click(function(){
-        //     $.get('new.txt',
-        //     function(data){
-        //         $('span').html(data)
+        //     $.ajax({
+        //         url:'new.txt',
+        //         success:function(result){
+        //             $('span').html(result)
+        //         }
         //     })
         // })
+        $('button').click(function(){
+            $.get('new.txt',
+            function(data){
+                $('span').html(data)
+            })
+        })
     </script>
 </body>
 </html>
